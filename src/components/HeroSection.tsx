@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { ArrowDown, Download, User } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
 
 const roles = ["AI Engineer", "Data Scientist", "ML Developer"];
 
