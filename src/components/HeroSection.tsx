@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { ArrowDown, Download, User } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
 
 const roles = ["AI Engineer", "Data Scientist", "ML Developer"];
 
@@ -51,8 +52,8 @@ const HeroSection = () => {
         </div>
         <div className="flex-shrink-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
           <div className="relative">
-            <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden glow-border border-2 animate-glow-pulse flex items-center justify-center bg-card/40">
-              <User className="text-primary" size={80} />
+            <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden glow-border border-2 animate-glow-pulse">
+              <img src={profileImg} alt="Shaik Salma" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -inset-3 rounded-full border border-primary/20 animate-spin" style={{ animationDuration: "15s" }} />
           </div>
