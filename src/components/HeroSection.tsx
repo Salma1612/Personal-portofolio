@@ -39,7 +39,7 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20">
-      <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
+      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
         <div className="flex-1 text-center lg:text-left animate-fade-in-up">
           <p className="text-primary font-medium mb-3 text-sm tracking-widest uppercase">Welcome to my portfolio</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-foreground mb-4">
