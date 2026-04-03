@@ -3,8 +3,8 @@ import { useInView } from "@/hooks/useInView";
 
 const education = [
   { degree: "B.Tech CSE (AI & ML)", school: "VIT-AP University", detail: "CGPA: 8.7" },
-  { degree: "Intermediate", school: "NRI Junior College", detail: "" },
-  { degree: "SSC", school: "Sresta High School", detail: "" },
+  { degree: "Intermediate", school: "NRI Junior College", detail: "94.7%" },
+  { degree: "SSC", school: "Sresta High School", detail: "98.5%" },
 ];
 
 const EducationSection = () => {

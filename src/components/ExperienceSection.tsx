@@ -1,4 +1,4 @@
-import { Briefcase } from "lucide-react";
+import { Briefcase, ExternalLink } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const experiences = [
@@ -7,8 +7,8 @@ const experiences = [
     role: "Data Associate L1 Intern",
     duration: "Dec 2025 – Feb 2026",
     points: [
-      "IoT Predictive Maintenance: Achieved 97.2% accuracy using XGBoost with real-time sensor data and SHAP explainability.",
-      "Visual Quality Control: Implemented MobileNetV2 & ResNet50 with Grad-CAM explainability, reaching 92.49% accuracy.",
+      { text: "IoT Predictive Maintenance: Achieved 97.2% accuracy using XGBoost with real-time sensor data and SHAP explainability.", link: "https://github.com/Salma1612/IoT-PREDICTIVE-MAINTENANCE" },
+      { text: "Visual Quality Control: Implemented MobileNetV2 & ResNet50 with Grad-CAM explainability, reaching 92.49% accuracy.", link: "https://github.com/Salma1612/VisionSpec-QC" },
     ],
   },
   {
@@ -16,8 +16,8 @@ const experiences = [
     role: "Generative AI Intern",
     duration: "Jun – Jul 2025",
     points: [
-      "Built an AI Email Generator using GPT-Neo, reducing manual effort by 35–40%.",
-      "Improved response time by 30% and reduced errors by 25%.",
+      { text: "Built an AI Email Generator using GPT-Neo, reducing manual effort by 35–40%.", link: "https://github.com/Salma1612/Email-Generator-using-GPT-neo" },
+      { text: "Improved response time by 30% and reduced errors by 25%.", link: "" },
     ],
   },
 ];
@@ -48,7 +48,14 @@ const ExperienceSection = () => {
                   {exp.points.map((p, j) => (
                     <li key={j} className="text-muted-foreground text-sm flex gap-2">
                       <span className="text-primary mt-1.5 flex-shrink-0">▹</span>
-                      {p}
+                      <span>
+                        {p.text}
+                        {p.link && (
+                          <a href={p.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary hover:underline ml-2">
+                            <ExternalLink size={12} /> GitHub
+                          </a>
+                        )}
+                      </span>
                     </li>
                   ))}
                 </ul>

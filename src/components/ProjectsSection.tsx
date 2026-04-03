@@ -6,16 +6,19 @@ const projects = [
     title: "AI Healthcare Chatbot",
     desc: "RAG-based system that generates context-aware medical responses using advanced retrieval and generation techniques.",
     tech: ["Mistral LLM", "LangChain", "FAISS", "Python"],
+    link: "https://github.com/Salma1612/AI-HEALTHCARE-CHATBOT",
   },
   {
     title: "Breast Cancer Prediction",
     desc: "MLP-based deep learning model achieving 97.2% accuracy and 0.98 AUC for early breast cancer detection.",
     tech: ["Deep Learning", "MLP", "Scikit-learn", "Python"],
+    link: "https://github.com/Salma1612/Breast-Cancer-Detection",
   },
   {
     title: "Heart Disease Prediction",
     desc: "Full ML pipeline for heart disease risk assessment with comprehensive feature engineering, achieving 85% accuracy.",
     tech: ["ML Pipeline", "Pandas", "Scikit-learn", "Python"],
+    link: "https://github.com/Salma1612/Heart-Disease-Prediction",
   },
 ];
 
@@ -39,9 +42,9 @@ const ProjectsSection = () => {
                   <span key={t} className="text-xs px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20">{t}</span>
                 ))}
               </div>
-              <button className="btn-outline text-sm py-2 px-4 w-fit inline-flex items-center gap-2">
+              <a href={p.link} target="_blank" rel="noopener noreferrer" className="btn-outline text-sm py-2 px-4 w-fit inline-flex items-center gap-2">
                 <ExternalLink size={14} /> GitHub
-              </button>
+              </a>
             </div>
           ))}
         </div>
