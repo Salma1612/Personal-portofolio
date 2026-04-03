@@ -1,16 +1,18 @@
 import { useState, useEffect } from "react";
-import { ArrowDown, Download, Brain, Cpu, Database, Code, BarChart3, Cog } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import { ArrowDown, Download, Brain, Cpu, Database, Code, BarChart3, Cog, Bot, LineChart } from "lucide-react";
+import heroImg from "@/assets/hero-illustration.png";
 
 const roles = ["AI Engineer", "Data Scientist", "ML Developer"];
 
 const floatingIcons = [
-  { icon: Brain, top: "10%", right: "5%", delay: "0s", size: 22 },
-  { icon: Cpu, top: "25%", right: "-5%", delay: "1s", size: 20 },
-  { icon: Database, top: "55%", right: "-8%", delay: "2s", size: 18 },
-  { icon: Code, top: "75%", right: "0%", delay: "0.5s", size: 20 },
-  { icon: BarChart3, top: "15%", right: "35%", delay: "1.5s", size: 18 },
-  { icon: Cog, top: "70%", right: "35%", delay: "2.5s", size: 16 },
+  { icon: Brain, top: "5%", right: "15%", delay: "0s", size: 22 },
+  { icon: Cpu, top: "20%", right: "-2%", delay: "1s", size: 20 },
+  { icon: Database, top: "50%", right: "-5%", delay: "2s", size: 18 },
+  { icon: Code, top: "75%", right: "5%", delay: "0.5s", size: 20 },
+  { icon: BarChart3, top: "8%", right: "55%", delay: "1.5s", size: 18 },
+  { icon: Cog, top: "65%", right: "55%", delay: "2.5s", size: 16 },
+  { icon: Bot, top: "35%", right: "60%", delay: "0.8s", size: 20 },
+  { icon: LineChart, top: "80%", right: "40%", delay: "1.8s", size: 18 },
 ];
 
 const HeroSection = () => {
@@ -53,7 +55,7 @@ const HeroSection = () => {
           <p className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed text-sm">
             Computer Science undergraduate specializing in AI & ML with experience in building real-world machine learning and deep learning systems.
           </p>
-          <div className="flex gap-4 justify-center lg:justify-start mb-6">
+          <div className="flex gap-4 justify-center lg:justify-start">
             <a href="#projects" className="btn-primary inline-flex items-center gap-2">
               View Projects <ArrowDown size={16} />
             </a>
@@ -62,14 +64,8 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-        <div className="flex-shrink-0 animate-fade-in relative" style={{ animationDelay: "0.3s" }}>
-          <div className="relative">
-            <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden glow-border border-2 animate-glow-pulse">
-              <img src={profileImg} alt="Shaik Salma" className="w-full h-full object-cover" />
-            </div>
-            <div className="absolute -inset-3 rounded-full border border-primary/20 animate-spin" style={{ animationDuration: "15s" }} />
-          </div>
-          {/* Floating skill icons */}
+        <div className="flex-shrink-0 animate-fade-in relative w-72 h-72 md:w-96 md:h-96" style={{ animationDelay: "0.3s" }}>
+          <img src={heroImg} alt="AI Engineer Illustration" className="w-full h-full object-contain drop-shadow-2xl" />
           {floatingIcons.map((item, i) => (
             <div
               key={i}
