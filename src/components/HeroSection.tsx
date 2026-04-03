@@ -38,7 +38,10 @@ const HeroSection = () => {
             <span className="text-primary">{text}</span>
             <span className="border-r-2 border-primary ml-1 animate-pulse" />
           </div>
-          <p className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed">
+          <p className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-2 leading-relaxed">
+            Building Intelligent Systems with Python & ML
+          </p>
+          <p className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed text-sm">
             Computer Science undergraduate specializing in AI & ML with experience in building real-world machine learning and deep learning systems.
           </p>
           <div className="flex gap-4 justify-center lg:justify-start">
