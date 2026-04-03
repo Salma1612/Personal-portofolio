@@ -1,6 +1,6 @@
 import { Brain, Cpu, Database, Server } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
-import profileImg from "@/assets/profile.jpg";
+import aboutPhoto from "@/assets/about-photo.png";
 
 const highlights = [
   { icon: Brain, label: "AI/ML Specialization", desc: "Deep learning, NLP & Explainable AI" },
@@ -20,16 +20,14 @@ const AboutSection = () => {
           <p className="section-subheading">Passionate about building intelligent systems</p>
         </div>
         <div className={`grid md:grid-cols-2 gap-12 items-center ${inView ? "animate-fade-in-up" : "opacity-0"}`}>
-          {/* Profile Image */}
           <div className="flex justify-center">
             <div className="relative">
               <div className="w-64 h-72 md:w-80 md:h-96 rounded-2xl overflow-hidden border-2 border-primary/20 shadow-2xl shadow-primary/10">
-                <img src={profileImg} alt="Shaik Salma" className="w-full h-full object-cover" loading="lazy" />
+                <img src={aboutPhoto} alt="Shaik Salma" className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="absolute -inset-2 rounded-2xl border border-primary/10 -z-10" />
             </div>
           </div>
-          {/* Text + Highlights */}
           <div>
             <h3 className="font-heading font-bold text-foreground text-2xl mb-4">Hello! I'm <span className="text-primary">Shaik Salma</span></h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
