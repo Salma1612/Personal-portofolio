@@ -7,9 +7,9 @@ const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const socials = [
-    { icon: Mail, label: "Email", href: "mailto:salma.shaik1612@gmail.com" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-    { icon: Github, label: "GitHub", href: "https://github.com" },
+    { icon: Mail, label: "salma.shaik1612@gmail.com", href: "mailto:salma.shaik1612@gmail.com" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sksalma1612" },
+    { icon: Github, label: "GitHub", href: "https://github.com/Salma1612" },
   ];
 
   return (
