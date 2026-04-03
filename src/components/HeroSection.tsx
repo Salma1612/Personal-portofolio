@@ -48,7 +48,6 @@ const HeroSection = () => {
             <a href="https://drive.google.com/file/d/1KwcCioAlwYvhYjDA__3yCt31LaVtWI0i/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-outline inline-flex items-center gap-2">
               <Download size={16} /> Download Resume
             </a>
-            </a>
           </div>
         </div>
         <div className="flex-shrink-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
